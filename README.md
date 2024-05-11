@@ -4,7 +4,7 @@ How to create new rails app in nix env.
 
 - Clone the repo
 - make sure nix is installed
-- enable nix flakes:
+- to enable nix flakes, run:
 
 ```shell
 echo "experimental-features = nix-command flakes" >> /etc/nix/nix.conf
@@ -14,7 +14,11 @@ echo "experimental-features = nix-command flakes" >> /etc/nix/nix.conf
 
 ```shell
 nix profile install nixpkgs#direnv
+```
 
+- then run:
+
+```shell
 # fish
 echo 'eval (direnv hook fish)' >> ~/.config/fish/config.fish
 
@@ -37,12 +41,26 @@ direnv allow
 # fish
 source ~/.config/fish/config.fish
 
-# bash
+# or bash
 source ~/.bashrc
 
-# zsh
+# or zsh
 source ~/.zshrc
 ```
+
+- initiate bundler to create Gemfile:
+
+```shell
+bundler init
+```
+
+- uncomment `gem "rails"` in **Gemfile** and run:
+
+```shell
+bundler
+```
+
+- this will create the gems in .gems
 
 - generate new rails app:
 
@@ -55,4 +73,3 @@ source ~/.zshrc
 ```shell
 ./bin/rails s
 ```
-
