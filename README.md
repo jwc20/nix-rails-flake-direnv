@@ -1,10 +1,11 @@
 # rails-nix-flake-direnv
 
-How to create new rails app in nix env.
+How to create new rails app in nix shell in non-NixOs.
 
 - Clone the repo
 - make sure nix is installed
-- to enable nix flakes, run:
+
+- [to enable nix flakes, run](https://nixos.wiki/wiki/Flakes):
 
 ```shell
 echo "experimental-features = nix-command flakes" >> /etc/nix/nix.conf
@@ -71,5 +72,10 @@ bundler
 - run server
 
 ```shell
-./bin/rails s
+rails s
 ```
+
+### See also:
+
+- [Frictionless developer environments](https://blog.testdouble.com/posts/2023-05-02-frictionless-developer-environments/)
+- [Using Nix for Your Ruby on Rails Development Environment](https://www.technoblather.ca/using-nix-for-your-ruby-on-rails-project/)
