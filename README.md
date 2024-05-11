@@ -61,7 +61,7 @@ bundler init
 bundler
 ```
 
-- this will create the gems in .gems
+- this will create the gems in `./vendor/bundle/ruby/3.1.0/gems`
 
 - generate new rails app:
 
