@@ -66,7 +66,7 @@ bundler
 - generate new rails app:
 
 ```shell
-./.gems/bin/rails new . --api --minimal
+./vendor/bundle/ruby/3.1.0/bin/rails new . --api --minimal
 ```
 
 - run server
