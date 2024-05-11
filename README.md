@@ -1,6 +1,5 @@
 # rails-nix-flake-direnv
 
-
 How to create new rails app in nix env.
 
 - Clone the repo
@@ -32,8 +31,8 @@ echo 'eval "$(direnv hook zsh)"' >> "$HOME/.zshrc"
 direnv allow
 ```
 
-
 - restart or refresh shell (terminal):
+
 ```
 # fish
 source ~/.config/fish/config.fish
@@ -45,11 +44,8 @@ source ~/.bashrc
 source ~/.zshrc
 ```
 
-
 - generate new rails app:
+
 ```shell
 ./.gems/bin/rails new . --api --minimal
 ```
-
-
-
