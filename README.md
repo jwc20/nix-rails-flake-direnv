@@ -12,9 +12,12 @@ echo "experimental-features = nix-command flakes" >> /etc/nix/nix.conf
 
 - install direnv:
 
-```shell
-nix profile install nixpkgs#direnv
+```
 
+nix profile install nixpkgs#direnv
+```
+
+```shell
 # fish
 echo 'eval (direnv hook fish)' >> ~/.config/fish/config.fish
 
@@ -42,6 +45,16 @@ source ~/.bashrc
 
 # zsh
 source ~/.zshrc
+```
+
+```
+bundler init
+```
+
+- **uncomment gem 'rails' in Gemfile** and run:
+
+```
+bundler
 ```
 
 - generate new rails app:
