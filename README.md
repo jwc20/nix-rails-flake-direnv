@@ -1,0 +1,1 @@
+# rails-nix-flake-direnv
