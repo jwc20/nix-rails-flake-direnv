@@ -31,8 +31,10 @@
         {
           default = pkgs.mkShell {
             shellHook = ''
-              export GEM_HOME=$(pwd)/.gems
-              export PATH=$GEM_HOME/bin:$PATH
+              export RUBY_VERSION="$(ruby -e 'puts RUBY_VERSION.gsub(/\d+$/, "0")')"
+              export GEM_HOME="$(pwd)/vendor/bundle/ruby/$RUBY_VERSION"
+              export BUNDLE_PATH="$(pwd)/vendor/bundle"
+              export PATH="$GEM_HOME/bin:$PATH"
             '';
             packages = [
               pkgs.docker
