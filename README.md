@@ -1,4 +1,4 @@
-# rails-nix-flake-direnv
+# nix-rails-flake-direnv
 
 How to create new rails app in nix shell in non-NixOs.
 
